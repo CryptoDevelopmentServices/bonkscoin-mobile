@@ -126,7 +126,7 @@ export default class MyWalletDetailsScreen extends React.Component {
             <Loader loading={true} />
           }
           <View style={styles.balanceContainer}>
-            {updatingBalance ? <ActivityIndicator size="small" color="#fff" style={styles.balanceLoading} /> : <TouchableOpacity onPress={() => this.updateBalance()}><Text style={styles.balanceText}>{`${walletUtils.wallet.balance/10000} MBC`}</Text></TouchableOpacity>}
+            {updatingBalance ? <ActivityIndicator size="small" color="#fff" style={styles.balanceLoading} /> : <TouchableOpacity onPress={() => this.updateBalance()}><Text style={styles.balanceText}>{`${walletUtils.wallet.balance/10000} BONC`}</Text></TouchableOpacity>}
             <Text>
               <Icon name="controller-record" size={14} color={isConnected ? '#00d47d' : '#ff4133'} />
               <Text style={styles.balanceSubText}> {walletUtils.wallet.title}</Text>
@@ -192,7 +192,7 @@ class MyWalletTransaction extends React.Component {
           <Text style={styles.txType}>{tx.type}</Text>
         </View>
         <View style={styles.txAmount}>
-          <Text style={styles.txAmountText}>{tx.type === 'Sent' ? "-" : "+"}{`${tx.amount.toFixed(2)} MBC`}</Text>
+          <Text style={styles.txAmountText}>{tx.type === 'Sent' ? "-" : "+"}{`${tx.amount.toFixed(2)} BONC`}</Text>
           <Text style={styles.txDateText}>{tx.date != null ? tx.date : "Mempool"}</Text>
         </View>
       </View>
