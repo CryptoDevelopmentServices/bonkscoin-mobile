@@ -156,7 +156,7 @@ export default class SendScreen extends React.Component {
 
           <View style={styles.sendContainer}>
               <Icon name="minus" size={36} style={{textAlign: 'center'}} color="#19e0d6" />
-              <Text style={styles.inputLabel}>Recipient address (MBC)</Text>
+              <Text style={styles.inputLabel}>Recipient address (BONC)</Text>
               <TextInput
                 onChangeText={(rAddress) => this.processAddress(rAddress)}
                 value={this.state.rAddress}
@@ -173,7 +173,7 @@ export default class SendScreen extends React.Component {
               </TouchableOpacity>
 
               <Icon name="minus" size={36} style={{textAlign: 'center'}} color="#19e0d6" />
-              <Text style={styles.inputLabel}>Amount (MBC)</Text>
+              <Text style={styles.inputLabel}>Amount (BONC)</Text>
               <TextInput
                 onChangeText={(rAmount) => this.setState({rAmount})}
                 value={this.state.rAmount}
@@ -183,7 +183,7 @@ export default class SendScreen extends React.Component {
               />
 
               <Icon name="minus" size={36} style={{textAlign: 'center'}} color="#19e0d6" />
-              <Text style={styles.inputLabel}>Fees (MBC)</Text>
+              <Text style={styles.inputLabel}>Fees (BONC)</Text>
               <TextInput
                 onChangeText={(rFees) => this.setState({rFees})}
                 value={this.state.rFees}
