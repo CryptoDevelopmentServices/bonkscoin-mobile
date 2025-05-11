@@ -11,7 +11,7 @@ var bs58check = require('bs58check');
 var aes256 = require('aes256');
 var coinjs = require('coinjs');
 
-const networkPrefix = {main: [0x19, 0x97], test: [0x71, 0xF1]};
+const networkPrefix = {main: [0x19, 0x1C], test: [0x71, 0xC4]};
 
 export function validateMnemonic(mnemonic) {
     return bip39.validateMnemonic(mnemonic)
