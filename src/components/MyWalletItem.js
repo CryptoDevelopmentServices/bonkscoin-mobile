@@ -81,7 +81,7 @@ export default class MyWalletItem extends React.Component {
         <Image source={Logo} style={styles.listItemLogo} />
         <View style={styles.listItemTextContainer}>
           <Text style={styles.listItemTextName}>{`${wallet.title}`}</Text>
-          <Text style={styles.listItemTextBalance}>{`${wallet.balance/10000} MBC`}</Text>
+          <Text style={styles.listItemTextBalance}>{`${wallet.balance/10000} BONC`}</Text>
         </View>
         {/*<Icon name='dots-three-vertical' size={20} color='#000672' style={styles.listItemIcon} />*/}
       </View>
